@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section class="container">
+        <div class="intro">
+            <h1>Hi, I'm <span contenteditable="true" id="editableName">Your Name</span></h1>
+            <p>A Passionate Web Developer</p>
+        </div>
+
+        <div class="content">
+            <!-- About Me -->
+            <div class="about" id="about">
+                <h2>About Me</h2>
+                <p>I'm a web developer skilled in HTML, CSS, and JavaScript. I create interactive and responsive websites.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <a href="https://your-portfolio-link.com" target="_blank">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Portfolio Website</h3>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://your-todo-app-link.com" target="_blank">
+                        <i class="fa-solid fa-list-check"></i>
+                        <h3>To-Do App</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Section with Clickable Social Icons -->
+            <div class="contact" id="contact">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/your-github" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:your-email@example.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 <span id="footerName">Your Name</span>. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
